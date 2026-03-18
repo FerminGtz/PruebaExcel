@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Scorecard Golf</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        /* El truco para que el iPhone detecte el toque de edición */
-        iframe { width: 100%; height: 100%; border: none; -webkit-overflow-scrolling: touch; }
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #fff; }
+        /* Esto ayuda a que el scroll sea fluido en iPhone */
+        .container { height: 100%; width: 100%; -webkit-overflow-scrolling: touch; overflow-y: auto; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSh53tKlSYDOchxUCHnx1b4g_gdSG6fwh9iY2F3iXFj97KcEYyY3ibDsR6g7DCNcAOlWNw-iKILfHl7/pubhtml?gid=0&single=true"></iframe>
+    <div class="container">
+        <iframe src="https://docs.google.com/spreadsheets/d/1UOojOSjpuVapjhQTDGNiIyV3eqqqxzqDwhFTunl3nNU/edit?usp=sharing/edit?rm=minimal&chrome=false&embedded=true"></iframe>
+    </div>
 </body>
 </html>
